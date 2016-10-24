@@ -2,7 +2,8 @@
 #include <signal.h>
 #include <unistd.h>
 
-volatile bool stop = false;
+//volatile bool stop = false;
+bool stop = false;
 
 void sigintHandler(int){
 	std::cout << "STOP ? [y/N]" << std::endl;
